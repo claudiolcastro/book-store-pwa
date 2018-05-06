@@ -1,4 +1,5 @@
 # Book Store PWA
+A PWA(Progressive Web App) made with Vue.js to register books with ISBN
 
 ## Build Setup
 
