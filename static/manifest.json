@@ -1,0 +1,16 @@
+{
+  "name": "Book Store",
+  "short_name": "Book Store",
+  "icons": [
+    {
+      "src": "/static/img/icons/book-icon.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ],
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#0097A7",
+  "theme_color": "#00BCD4"
+}
