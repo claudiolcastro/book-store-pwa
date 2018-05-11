@@ -14,7 +14,7 @@
         <i class="large material-icons">add</i>
       </a>
       <ul>
-        <li><a class="btn-floating"><i class="material-icons">camera_alt</i></a></li>
+        <li><router-link to="/new_camera" class="btn-floating"><i class="material-icons">camera_alt</i></router-link></li>
         <li><a class="btn-floating"><i class="material-icons">edit</i></a></li>
       </ul>
     </div>
@@ -24,8 +24,12 @@
 <script>
 export default {
   name: 'app',
-  components: {
-
+  mounted() {
+    const elems = document.querySelectorAll('.fixed-action-btn');
+    const instances = M.FloatingActionButton.init(elems, { // eslint-disable-line
+      direction: 'top',
+      hoverEnabled: false,
+    });
   },
 };
 </script>
