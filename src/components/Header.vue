@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <header>
-      <img src="/static/img/icons/book-icon.png" class="icon-header">
+      <img src="static/img/icons/book-icon.png" class="icon-header">
       <span>Book Store</span>
     </header>
   </div>

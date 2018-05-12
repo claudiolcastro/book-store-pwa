@@ -2,7 +2,7 @@
   <div id="app">
     <ul class="collection">
       <li class="collection-item avatar">
-        <img src="/static/img/icons/book-icon.png" class="circle">
+        <img src="static/img/icons/book-icon.png" class="circle">
         <b class="title">Title</b>
         <p>Author</p>
         <a href="#!" class="secondary-content"><i class="material-icons">delete</i></a>
@@ -44,7 +44,6 @@ ul {
   ul {
     width: 70%;
     margin-left: 15%;
-    margin-top: 10px;
   }
 }
 
