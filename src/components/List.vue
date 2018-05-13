@@ -28,7 +28,7 @@ export default {
     const elems = document.querySelectorAll('.fixed-action-btn');
     const instances = M.FloatingActionButton.init(elems, { // eslint-disable-line
       direction: 'top',
-      hoverEnabled: false,
+      hoverEnabled: true,
     });
   },
 };
