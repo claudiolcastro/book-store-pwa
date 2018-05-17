@@ -27,7 +27,7 @@ header {
   z-index: 1;
   margin: 0;
   height: 56px;
-  padding: 0 16px 0 24px;
+  padding: 0 16px 0 15px;
   background-color: #00BCD4;
   color: #ffffff;
 }
