@@ -1,10 +1,10 @@
 <template>
   <div id="app">
-    <ul class="collection">
+    <ul v-for="book in books" :key="book.isbn" class="collection">
       <li class="collection-item avatar">
         <img src="static/img/icons/book-icon.png" class="circle">
-        <b class="title">Title</b>
-        <p>Author</p>
+        <b class="title">{{ book.title }}</b>
+        <p>{{ book.author }}</p>
         <a href="#!" class="secondary-content"><i class="material-icons">delete</i></a>
       </li>
     </ul>
@@ -22,8 +22,15 @@
 </template>
 
 <script>
+import data from '../store/data';
+
 export default {
   name: 'app',
+  data() {
+    return {
+      books: data.books,
+    };
+  },
   mounted() {
     const elems = document.querySelectorAll('.fixed-action-btn');
     const instances = M.FloatingActionButton.init(elems, { // eslint-disable-line
@@ -37,8 +44,8 @@ export default {
 <style scoped>
 
 ul {
-  margin-top: 0;
-  padding-top: 55px;
+  margin: 0;
+  border-top: none;
 }
 @media (min-width: 1200px) {
   ul {

@@ -22,7 +22,6 @@ export default {
 header {
   display: flex;
   align-items: center;
-  position: fixed;
   width: 100%;
   z-index: 1;
   margin: 0;
